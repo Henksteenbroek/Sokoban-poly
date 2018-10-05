@@ -10,7 +10,7 @@ namespace Sokoban_poly.Model
     {
         public Wall(Game game) : base(game)
         {
-            FloorChar = '#';
+            FloorChar = '█';
             Walkable = false;
         }
     }

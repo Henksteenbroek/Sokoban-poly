@@ -45,7 +45,6 @@ namespace Sokoban_poly.Controller
                     mazeView.showStartingScreen();
                     reader.CreateLinks(reader.ReadMaze(inputView.getMazeNumber()));
                 }
-                game.givePoints();
                 Console.WriteLine(game.GoalsCleared);
             }
         }

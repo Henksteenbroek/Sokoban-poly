@@ -11,7 +11,7 @@ namespace Sokoban_poly.Model
     {
         public Crate()
         {
-            FloorChar = 'o';
+            FloorChar = 'O';
         }
     }
 }
