@@ -34,7 +34,7 @@ namespace Sokoban_poly.Controller
                 int input = inputView.readInput(inputView.validInputGiven());
                 if (input >= 0)
                 {
-                    game.moveObject(game.Truck, input);
+                    game.Truck.move(input);
                 }
                 else if (input == -1)
                 {
@@ -45,7 +45,6 @@ namespace Sokoban_poly.Controller
                     mazeView.showStartingScreen();
                     reader.CreateLinks(reader.ReadMaze(inputView.getMazeNumber()));
                 }
-                game.givePoints();
                 Console.WriteLine(game.GoalsCleared);
             }
         }

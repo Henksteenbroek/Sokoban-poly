@@ -22,8 +22,6 @@ namespace Sokoban_poly.Model
             this.game = game;
             FloorChar = '.';
             Walkable = true;
-            WorthPoints = false;
-            
         }
 
         public char getFloorChar()

@@ -46,12 +46,12 @@ namespace Sokoban_poly.Controller
                             break;
                         case 'o':
                             levelSquares[y, x] = new Floor(game);
-                            levelSquares[y, x].MoveableObject = new Crate();
+                            levelSquares[y, x].MoveableObject = new Crate(game);
                             levelSquares[y, x].MoveableObject.Location = levelSquares[y, x];
                             break;
                         case '@':
                             levelSquares[y, x] = new Floor(game);
-                            game.Truck = new Truck();
+                            game.Truck = new Truck(game);
                             levelSquares[y, x].MoveableObject = game.Truck;
                             levelSquares[y, x].MoveableObject.Location = levelSquares[y, x];
                             break;

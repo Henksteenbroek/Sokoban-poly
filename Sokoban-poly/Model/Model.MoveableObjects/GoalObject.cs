@@ -8,7 +8,7 @@ namespace Sokoban_poly.Model.Model.MoveableObjects
 {
     public class GoalObject : MoveableObject
     {
-        public GoalObject()
+        public GoalObject(Game game) : base(game)
         {
         }
     }
