@@ -50,15 +50,10 @@ namespace Sokoban_poly.Model
 
                 if (target.MoveableObject != null)
                 {
-                    if (target.MoveableObject.canMove(direction) && moveObject(target.MoveableObject, direction))
-                    {
-
-                    }
-                    else
+                    if (!target.MoveableObject.canMove(direction) || !moveObject(target.MoveableObject, direction))
                     {
                         return false;
                     }
-
                 }
 
                 target.MoveableObject = moveableObject;
