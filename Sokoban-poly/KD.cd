@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sokoban_poly.Controller.MainController">
+    <Position X="11" Y="4" Width="1.5" />
+    <AssociationLine Name="mazeView" Type="Sokoban_poly.View.MazeView" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.75" Y="5.296" />
+        <Point X="11.75" Y="6.75" />
+        <Point X="10.75" Y="6.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="reader" Type="Sokoban_poly.Controller.MazeReader" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.156" Y="5.296" />
+        <Point X="12.156" Y="6.812" />
+        <Point X="13.5" Y="6.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAIAAAAAAAAAAAAAAAAAAAAQIAAAAAAAQAAA=</HashCode>
+      <FileName>Controller\MainController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="game" />
+      <Field Name="inputView" />
+      <Field Name="mazeView" />
+      <Field Name="reader" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban_poly.Controller.MazeReader">
+    <Position X="13.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAgAAAAACAAAAAAAAAIAAAIAAAAAAA=</HashCode>
+      <FileName>Controller\MazeReader.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="game" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban_poly.Program">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Controller\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban_poly.Model.Floor">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAEAAAAARAAAAAAAAAAACAiAAAAAAAI=</HashCode>
+      <FileName>Model\Model.FieldObjects\Floor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="MoveableObject" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban_poly.Model.Goal" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Model.FieldObjects\Goal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban_poly.Model.Model.FieldObjects.Space" Collapsed="true">
+    <Position X="0.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Model.FieldObjects\Space.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban_poly.Model.Wall" Collapsed="true">
+    <Position X="0.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Model.FieldObjects\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban_poly.Model.Crate" Collapsed="true">
+    <Position X="12.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Model.MoveableObjects\Crate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban_poly.Model.Model.MoveableObjects.GoalObject" Collapsed="true">
+    <Position X="10" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Model.MoveableObjects\GoalObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban_poly.Model.MoveableObject">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAIABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Model.MoveableObjects\MoveableObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Location" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban_poly.Model.Truck" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Model.MoveableObjects\Truck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban_poly.Model.Game">
+    <Position X="4" Y="4.25" Width="1.5" />
+    <AssociationLine Name="Truck" Type="Sokoban_poly.Model.Truck" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="4.719" />
+        <Point X="10.75" Y="4.719" />
+        <Point X="10.75" Y="2.441" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEEAAAQAAAAAAAAAAAAAAAAAAAAACAAAACAA=</HashCode>
+      <FileName>Model\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="First" />
+      <Property Name="Last" />
+      <Property Name="Truck" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban_poly.View.InputView">
+    <Position X="13.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAAAEAgAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\InputView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban_poly.View.MazeView">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAgAAAAAAAAAAAAAACAQAIAAAAAAAAAAA=</HashCode>
+      <FileName>View\Mazeview.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="game" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Sokoban_poly.Model.Direction" Collapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>Model\Direction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
