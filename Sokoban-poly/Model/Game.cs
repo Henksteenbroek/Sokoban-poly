@@ -21,8 +21,10 @@ namespace Sokoban_poly.Model
             GoalsCleared = 0;
         }
 
-        public void checkWin()
+        public bool checkWin()
         {
+            GoalsCleared = 0;
+
             Floor temp1 = First;
             Floor temp2 = First;
 
@@ -40,12 +42,20 @@ namespace Sokoban_poly.Model
                 {
                     temp1 = temp2.Down;
                     temp2 = temp2.Down;
-                    Console.WriteLine();
                 }
             }
             if(Last.MoveableObject != null && Last.MoveableObject.getsPoints && Last.givesPoints)
             {
                 GoalsCleared++;
+            }
+
+            if (GoalsCleared >= GoalCount)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
 
