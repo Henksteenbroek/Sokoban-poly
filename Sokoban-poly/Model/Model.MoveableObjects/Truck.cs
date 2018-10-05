@@ -8,7 +8,7 @@ namespace Sokoban_poly.Model
 {
     public class Truck : MoveableObject
     {
-        public Truck()
+        public Truck(Game game) : base(game)
         {
             FloorChar = '@';
         }

@@ -9,7 +9,7 @@ namespace Sokoban_poly.Model
 {
     public class Crate: GoalObject
     {
-        public Crate()
+        public Crate(Game game) : base(game)
         {
             FloorChar = 'O';
         }

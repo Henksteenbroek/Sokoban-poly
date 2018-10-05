@@ -22,7 +22,6 @@ namespace Sokoban_poly.Model
             this.game = game;
             FloorChar = '.';
             Walkable = true;
-            
         }
 
         public char getFloorChar()

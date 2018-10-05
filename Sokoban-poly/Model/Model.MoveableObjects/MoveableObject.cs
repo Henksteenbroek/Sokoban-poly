@@ -8,12 +8,20 @@ namespace Sokoban_poly.Model
 {
     public class MoveableObject
     {
+        Game game;
         public Floor Location { get; set; }
         public char FloorChar { get; set; }
-        public MoveableObject()
-        {
 
+        public MoveableObject(Game game)
+        {
+            this.game = game;
         }
+
+        public void move(int direction)
+        {
+            game.moveObject(this, direction);
+        }
+
       
         public bool canMove(int direction)
         {
