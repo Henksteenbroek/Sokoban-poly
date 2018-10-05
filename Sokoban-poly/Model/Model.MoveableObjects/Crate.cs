@@ -12,6 +12,7 @@ namespace Sokoban_poly.Model
         public Crate(Game game) : base(game)
         {
             FloorChar = 'O';
+            getsPoints = true;
         }
     }
 }

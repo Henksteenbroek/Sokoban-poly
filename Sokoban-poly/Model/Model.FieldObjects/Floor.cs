@@ -16,12 +16,14 @@ namespace Sokoban_poly.Model
         public Floor Right { get; set; }
         public char FloorChar { get; set; }
         public bool Walkable { get; set; }
+        public bool givesPoints { get; set; }
 
         public Floor(Game game)
         {
             this.game = game;
             FloorChar = '.';
             Walkable = true;
+            givesPoints = false;
         }
 
         public char getFloorChar()

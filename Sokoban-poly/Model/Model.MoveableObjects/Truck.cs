@@ -11,6 +11,7 @@ namespace Sokoban_poly.Model
         public Truck(Game game) : base(game)
         {
             FloorChar = '@';
+            getsPoints = false;
         }
     }
 }

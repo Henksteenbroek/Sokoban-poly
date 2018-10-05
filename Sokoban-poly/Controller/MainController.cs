@@ -32,6 +32,8 @@ namespace Sokoban_poly.Controller
             while (true)
             {
                 mazeView.showBoard();
+                game.checkWin();
+                Console.WriteLine(game.GoalsCleared);
                 int input = inputView.readInput(inputView.validInputGiven());
                 if (input >= 0)
                 {
@@ -47,7 +49,7 @@ namespace Sokoban_poly.Controller
                     mazeNumber = inputView.getMazeNumber();
                     reader.CreateLinks(reader.ReadMaze(mazeNumber));
                 }
-                Console.WriteLine(game.GoalsCleared);
+                
             }
         }
     }

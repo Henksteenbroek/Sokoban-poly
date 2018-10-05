@@ -10,6 +10,7 @@ namespace Sokoban_poly.Model.Model.MoveableObjects
     {
         public GoalObject(Game game) : base(game)
         {
+            getsPoints = true;
         }
     }
 }

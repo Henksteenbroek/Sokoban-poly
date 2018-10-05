@@ -12,6 +12,7 @@ namespace Sokoban_poly.Model
         {
             FloorChar = '█';
             Walkable = false;
+            givesPoints = false;
         }
     }
 }

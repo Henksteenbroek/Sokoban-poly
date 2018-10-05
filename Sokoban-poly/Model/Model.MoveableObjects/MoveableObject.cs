@@ -11,10 +11,12 @@ namespace Sokoban_poly.Model
         Game game;
         public Floor Location { get; set; }
         public char FloorChar { get; set; }
+        public bool getsPoints { get; set; }
 
         public MoveableObject(Game game)
         {
             this.game = game;
+            getsPoints = false;
         }
 
         public void move(int direction)

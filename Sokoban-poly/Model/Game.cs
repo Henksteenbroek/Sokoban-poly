@@ -18,12 +18,35 @@ namespace Sokoban_poly.Model
 
         public Game()
         {
-            
+            GoalsCleared = 0;
         }
 
-        public bool checkWin()
+        public void checkWin()
         {
-            return false;
+            Floor temp1 = First;
+            Floor temp2 = First;
+
+            while (temp1 != Last)
+            {
+                if (temp1 != null)
+                {
+                    if(temp1.MoveableObject != null && temp1.MoveableObject.getsPoints && temp1.givesPoints)
+                    {
+                        GoalsCleared++;
+                    }
+                    temp1 = temp1.Right;
+                }
+                else if (temp2.Down != null)
+                {
+                    temp1 = temp2.Down;
+                    temp2 = temp2.Down;
+                    Console.WriteLine();
+                }
+            }
+            if(Last.MoveableObject != null && Last.MoveableObject.getsPoints && Last.givesPoints)
+            {
+                GoalsCleared++;
+            }
         }
 
         public bool moveObject(MoveableObject moveableObject, int direction)
