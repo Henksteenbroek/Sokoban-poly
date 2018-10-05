@@ -27,7 +27,8 @@ namespace Sokoban_poly.Controller
         public void run()
         {
             mazeView.showStartingScreen();
-            reader.CreateLinks(reader.ReadMaze(inputView.getMazeNumber()));
+            int mazeNumber = inputView.getMazeNumber();
+            reader.CreateLinks(reader.ReadMaze(mazeNumber));
             while (true)
             {
                 mazeView.showBoard();
@@ -38,12 +39,13 @@ namespace Sokoban_poly.Controller
                 }
                 else if (input == -1)
                 {
-
+                    reader.CreateLinks(reader.ReadMaze(mazeNumber));
                 }
                 else
                 {
                     mazeView.showStartingScreen();
-                    reader.CreateLinks(reader.ReadMaze(inputView.getMazeNumber()));
+                    mazeNumber = inputView.getMazeNumber();
+                    reader.CreateLinks(reader.ReadMaze(mazeNumber));
                 }
                 Console.WriteLine(game.GoalsCleared);
             }
