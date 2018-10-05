@@ -88,10 +88,9 @@ namespace Sokoban_poly.Model
                         return false;
                     }
                 }
-
-                target.MoveableObject = moveableObject;
                 moveableObject.Location.MoveableObject = null;
                 moveableObject.Location = target;
+                target.MoveableObject = moveableObject;
             }
             return true;
         }

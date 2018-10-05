@@ -64,6 +64,11 @@ namespace Sokoban_poly.View
             return returnValue;
         }
 
+        public ConsoleKeyInfo gameWon()
+        {
+            return Console.ReadKey();
+        }
+
         public int getMazeNumber()
         {
             bool validInputGiven = false;

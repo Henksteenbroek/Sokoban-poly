@@ -44,7 +44,7 @@ namespace Sokoban_poly.View
             Console.WriteLine("|      @ : truck              |                      |");
             Console.WriteLine("└────────────────────────────────────────────────────┘" + "\n");
 
-            Console.WriteLine("> Kies een doolhof (1 - 4), s = stop");
+            Console.WriteLine("> Kies een doolhof (1 - 4)");
         }
 
         private void printFields()
@@ -72,6 +72,7 @@ namespace Sokoban_poly.View
         public void gameWon()
         {
             Console.WriteLine("Hoera, je hebt dit level opgelost");
+            Console.WriteLine("Druk op enter om terug te gaan");
         }
     }
 }
